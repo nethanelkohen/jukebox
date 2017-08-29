@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>My Jukebox</title>
   <link rel="stylesheet" href="main.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
+
 <body>
   <div id="h5">
-    <h5>Hover over the image to start a song. Click to pause. Press enter
+    <h5>Hover over the play button to start a song. Click to pause. Press enter
       to stop.</h5>
   </div>
   <div id="playlistcontainer">
@@ -18,10 +19,23 @@
     <source src="" type="audio/mp3">
   </audio>
   <div id="controller">
-    <img src="play.jpg" id="play">
+    <img src="play.jpg" id="play" />
     <button class="btn" id="pause">Pause</button>
     <button class="btn" id="add">Add songs</button>
   </div>
-  <script type="text/javascript" src="mainme.js"></script>
+  <br/>
+  <div id="sccontroller">
+    <input id="scSearch">
+    <button type="submit" id="scSubmitButton" name="button">SUBMIT</button>
+    <button id="scplayBtn">Play soundcloud</button>
+    <button id="scpauseBtn">Pause soundcloud</button>
+    <div id="title"></div>
+    <div id="info">
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script type="text/javascript" src="mainme.js"></script>
+  </div>
 </body>
+
 </html>
