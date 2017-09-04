@@ -7,9 +7,10 @@ body {
   padding: 10px;
 }
 
-#h5 {
+#h1 {
   text-align: center;
-  font-family: Georgia;
+  font-variant: small-caps;
+  font-family: Monaco;
 }
 
 #controller {
@@ -23,20 +24,30 @@ body {
 
 #playlistcontainer {
   font-size: 20px;
-  font-family: fantasy;
+  font-family: Monaco;
+  text-align: center;
+  width:20%;
+  margin:0 auto;
 }
 
 img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 5px;
-    vertical-align: middle;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 5px;
+  vertical-align: middle;
 }
 
-#playlistcontainer{
-    width:200px;
-    margin:0 auto;
-    text-align:left;
+#sccontainer{
+  padding-top: 5%;
+  font-size: 20px;
+  font-family: Monaco;
+  text-align: center;
+}
+
+#scSearch{
+  margin-bottom: 10%;
+  height: 10%;
+  width: 25%;
 }
 
 .btn {
@@ -64,8 +75,4 @@ img {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
-
-#info, #title {
-  text-align: center;
 }
